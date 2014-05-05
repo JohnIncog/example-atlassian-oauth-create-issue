@@ -21,9 +21,9 @@ Next you'll want to setup your application link inside of Jira, you can find ins
 
 Next up we need to make some changes to the config to point to your Jira instance, specifically these three lines:
 
-define('ATLASSIAN_DOMAIN', '');
-define('ATLASSIAN_CONSUMER_KEY', '');
-define('ATLASSIAN_PRIVATE_KEY', ''); //Absoulte Path
+    define('ATLASSIAN_DOMAIN', '');
+    define('ATLASSIAN_CONSUMER_KEY', '');
+    define('ATLASSIAN_PRIVATE_KEY', ''); //Absoulte Path
 
 
 In the first line you'll want to change this to your Jira install.
