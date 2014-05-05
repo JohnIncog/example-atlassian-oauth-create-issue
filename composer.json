@@ -1,0 +1,17 @@
+{
+    "name": "stanlemon/atlassian-oauth",
+    "description": "Atlassian PHP OAuth Example",
+    "keywords": ["atlassian", "jira", "oauth", "guzzle"],
+    "license": "MIT",
+    "autoload": {
+        "psr-0": { 
+            "": "src/"
+         }
+    },
+    "minimum-stability": "dev",
+    "require": {
+        "guzzle/guzzle": "3.0.*",
+        "silex/silex": "1.0.*",
+        "twig/twig": "1.*"
+    }
+}
