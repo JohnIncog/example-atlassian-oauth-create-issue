@@ -1,4 +1,8 @@
-# Atlassian PHP OAuth Example
+#Creating an issue using OAuth
+
+This code is currently not working.  Any help would be greatly appreciated
+
+## Atlassian PHP OAuth Example
 This is an example of connecting with Atlassian Jira's OAuth service, thus allowing you to use their REST api. This example is built with Silex and Twig and uses the Guzzle library for OAuth and subsequent REST requests.  All of these tools can be easily installed with  [Composer](http://getcomposer.org), which can be installed using:
 
 	curl -s https://getcomposer.org/installer | php
@@ -17,12 +21,13 @@ Next you'll want to setup your application link inside of Jira, you can find ins
 
 Next up we need to make some changes to the config to point to your Jira instance, specifically these three lines:
 
-	$oauth = new Lemon\OAuth('http://localhost:8181/');
-	$oauth->setPrivateKey('/Users/stan/Sites/ssl/myrsakey.pem')
-	      ->setConsumerKey('1234567890')
+define('ATLASSIAN_DOMAIN', '');
+define('ATLASSIAN_CONSUMER_KEY', '');
+define('ATLASSIAN_PRIVATE_KEY', ''); //Absoulte Path
+
 
 In the first line you'll want to change this to your Jira install.
-In the second line you'll want to change this to the path of your private key
-In the third line you'll want to put whatever you labeled as your *"consumer key"*.
+In the secondline you'll want to put whatever you labeled as your *"consumer key"*.
+In the third line you'll want to change this to the path of your private key
 
 Once you've completed these changes point your web browser to the 'web' folder and click to authenticate with Jira.
